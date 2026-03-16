@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Van’s Warm Embrace</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body,html{
+width:100%;
+height:100%;
+font-family:'Playfair Display',serif;
+color:#ffffff;
+}
+
+.fixed-bg-container{
+position:fixed;
+top:0;
+left:0;
+width:100vw;
+height:100vh;
+z-index:-10;
+}
+
+.fixed-bg-container img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.glass-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+z-index:-5;
+}
+
+.scroll-content{
+position:relative;
+z-index:10;
+width:100%;
+padding:0 10%;
+background:transparent;
+}
+
+.top-hero-section{
+padding-top:10vh;
+padding-bottom:50px;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+h1{
+font-family:'Great Vibes',cursive;
+font-size:clamp(2.5rem,8vw,4.5rem);
+color:#c5a059;
+text-align:center;
+margin-bottom:40px;
+text-shadow:2px 2px 15px rgba(0,0,0,0.8);
+}
+
+.portrait-frame{
+width:100%;
+max-width:500px;
+border:1px solid rgba(197,160,89,0.5);
+box-shadow:0 20px 50px rgba(0,0,0,0.7);
+animation:float3d 6s ease-in-out infinite;
+}
+
+.portrait-frame img{
+width:100%;
+display:block;
+}
+
+@keyframes float3d{
+0%,100%{transform:translateY(0) rotateX(2deg);}
+50%{transform:translateY(-15px) rotateX(5deg);}
+}
+
+.story-text-container{
+padding:40px 0;
+font-size:1.4rem;
+line-height:2.2;
+text-align:justify;
+text-shadow:2px 2px 10px rgba(0,0,0,1);
+}
+
+.drop-cap{
+font-family:'Great Vibes',cursive;
+font-size:6rem;
+float:left;
+margin-right:15px;
+line-height:0.7;
+color:#c5a059;
+}
+
+.petal{
+position:fixed;
+top:-50px;
+z-index:100;
+font-size:20px;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+to{transform:translateY(110vh) rotate(360deg);}
+}
+
+footer{
+padding:100px 0;
+text-align:center;
+font-family:'Great Vibes',cursive;
+font-size:3rem;
+color:#c5a059;
+text-shadow:2px 2px 10px rgba(0,0,0,1);
+}
+
+@media(max-width:768px){
+.scroll-content{padding:0 5%;}
+.story-text-container{font-size:1.15rem;}
+.drop-cap{font-size:4rem;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="fixed-bg-container">
+<img src="images/background_picnic.jpg" alt="Picnic Background">
+</div>
+
+<div class="glass-overlay"></div>
+
+<div class="scroll-content">
+
+<script>
+function spawnPetal(){
+const p=document.createElement('div');
+p.classList.add('petal');
+p.innerHTML=['🌸','✨','🌹'][Math.floor(Math.random()*3)];
+p.style.left=Math.random()*100+'vw';
+p.style.animationDuration=Math.random()*3+4+'s';
+p.style.opacity=Math.random();
+document.body.appendChild(p);
+setTimeout(()=>p.remove(),7000);
+}
+setInterval(spawnPetal,800);
+</script>
+
+<section class="top-hero-section">
+
+<h1>The Van’s Warm Embrace</h1>
+
+<div class="portrait-frame">
+<img src="images/sophie_portrait.jpg" alt="Sophie Portrait">
+</div>
+
+</section>
+
+<article class="story-text-container">
+
+<p><span class="drop-cap">S</span>ophie slips into Ali’s van after work, drawn by his text and the promise of escape. The heat of the van wraps around her like a lover’s embrace, the scent of leather and bergamot mingling with the metallic tang of his tools. When his hands find her, rough and possessive, she’s torn between the thrill of danger and the heat building inside her.</p>
+
+<p>The workplace lights flickered overhead like dying fireflies, casting long shadows across the empty desks as I slipped my phone back into my purse. Ali’s text had come through just as I was locking my drawer—big eyes emoji, pretty please—no words needed. My fingers tightened around the smooth leather strap of my bag, the weight of the day’s frustration still clinging to my shoulders like a second skin. The hum of the fluorescent bulbs buzzed in my ears, too bright, too sterile, as I made my way toward the back exit, heels clicking sharply against the polished floor.</p>
+
+<p>The back street smelled of damp pavement and diesel fumes, the air thick with the kind of chill that seeped through wool coats. My breath curled in front of me as I scanned the line of parked vans, their dark windows reflecting the sickly orange glow of the streetlamps. Then I saw it—Ali’s sleek black cargo van, humming quietly, a thin wisp of steam rising from the exhaust pipe. The side door was cracked open just enough to spill a warm, golden rectangle of light onto the asphalt. My pulse kicked up, not from the cold, but from the promise of what waited inside.</p>
+
+<p>I ducked in, the heat wrapping around me like a lover’s arms, rich and sudden. The van smelled of leather and something citrusy—bergamot, maybe—mixed with the faint metallic tang of Ali’s tools. The space was immaculate, the floor covered in a thick, plush blanket that muffled my steps as I kicked off my heels. His office chair sat at the far end, angled toward a small monitor mounted on the wall, the CCTV feed flickering with static. Tools and spare parts were neatly pushed into the corner, their silhouettes sharp against the dim lighting. And there, on the folded-down bench seat, was a plastic cup of wine, the deep red liquid catching the light like a promise.</p>
+
+<p>“Took you long enough,” Ali murmured, not turning around. His voice was rough, the kind of rough that made my thighs press together. He was still in his suit jacket, the tie loosened just enough to show the crisp white of his shirt beneath. His broad shoulders shifted as he reached for something on the dashboard, the muscles beneath the fabric flexing in a way that had my breath hitching.</p>
+
+<p>I swallowed, my fingers brushing the stem of the wineglass as I sat. “Had to make sure no one saw me sneaking out like a teenager.” The wine was good—dry, with a bite that lingered on my tongue. I took another sip, letting the warmth of it spread through me, loosening the knots in my chest. The van’s engine purred softly, the vibrations humming up through the blanket, through my stockings.</p>
+
+<p>Then his hand was on my knee.</p>
+
+<p>I jumped, wine sloshing over the rim of the cup, but before I could react, his fingers were already sliding upward, bunching the fabric of my skirt. His touch was sure, possessive, like he’d been thinking about this all day.</p>
+
+<p>“Ali—” My voice came out breathier than I meant it to.</p>
+
+<p>“Shh.” His other hand found my wrist, guiding the wineglass to the bench beside me before his fingers curled around the back of my neck, pulling me forward. His mouth crashed into mine, hot and demanding. I moaned into him, my free hand gripping his shoulder as he kissed me deeper.</p>
+
+<p>The van’s windows were dark, but the CCTV monitor flickered in the corner, the grainy feed showing the empty alley outside. Anyone could walk by. Anyone could see.</p>
+
+<p>And somehow that thought alone made my pulse race even faster.</p>
+
+</article>
+
+<footer>
+Forever Yours, Ali
+</footer>
+
+</div>
+
+</body>
+</html>
